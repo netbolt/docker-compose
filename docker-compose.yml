@@ -1,3 +1,7 @@
+# $ cd my-node
+# $ docker-compose run synereo
+
+
 rabbitmq:
   image: rabbitmq
   environment:
@@ -7,7 +11,6 @@ rabbitmq:
   - RABBIT_ERLANG_COOKIE='s3cr3t'
   ports:
     - "5672:5672"
-
 
 mongodb:
   image: mongo
